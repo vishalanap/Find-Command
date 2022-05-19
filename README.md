@@ -29,7 +29,7 @@ Return path to each file or directory present in given directory.
 Return paths to files having size greater than/equal to/less than given size.
 ```
 l - less than
-e - equal
+e - equal to
 g - greater than
 ```
 6. <b>find <directory> -ls </b>:
@@ -41,6 +41,8 @@ Print information about how to use find command implemented.
 
 ### Project Flow
 ![Project Flow](project_flow.png)
+
+<hr>
 
 ### References
 1. <b>Linux Manual Page</b>: https://man7.org/linux/man-pages/man1/find.1.html
