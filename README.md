@@ -12,7 +12,7 @@
 Return paths to all files or directories in given directory whose name matches with the given filename.
 2. <b> find <directory> -user <name/user id></b>:
 Return path to files associated with the given user.
-3. <b>find <directory> -type <b/c/d/p/f/s/l> <b>:
+3. <b>find <directory> -type <b/c/d/p/f/s/l> </b>:
 Return paths to all files which matches with the given file type.
 4. <b>find <directory> -display </b>:
 Return path to each file or directory present in given directory.
