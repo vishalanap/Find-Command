@@ -22,3 +22,8 @@ Return paths to files having size greater than/equal to/less than given size.
 Return information about each entry of directory, for eg. file serial number, file type, size in bytes, modification date and time , path ,etc.
 7. <b>find <directory> -help </b>:
 Print information about how to use find command implemented.
+
+<hr>
+
+### Project Flow-
+![Project Flow](project_flow.png)
