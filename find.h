@@ -5,7 +5,9 @@ typedef struct node{
     int Display;
     char File_Type;
     char *Name;
+    char* user;
     char *size;
+    unsigned long user_id;
     struct node *next;
 }Foptions;
 
