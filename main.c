@@ -4,10 +4,10 @@
 
 /*
 FIND COMMAND:
-	A simplified implementation of the 'find' utility on Linux systems. 
-	This utility is used to locate files on a Unix or Linux system, 
-	searching any set of directories that are specified for files 
-	that match the supplied search criteria.
+    A simplified implementation of the 'find' utility on Linux systems.
+    This utility is used to locate files on a Unix or Linux system,
+    searching any set of directories that are specified for files
+    that match the supplied search criteria.
 
 Check all given command line arguments and point to correct option
     length : number of command line arguments
