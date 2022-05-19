@@ -1,0 +1,20 @@
+
+					---=== WELCOME TO FIND COMMAND ===---
+
+Command : ./a.out <file/directory> <options> <expression> 
+
+Points to remember :
+	*If directory not specified then it will assume current working directory.
+	*If no option entered then by default it will take -display option.
+	
+==================================----------------------------------------========================================           
+           Options :
+                     1. -help                          [Display How to use program]
+                     2. -user <name>/<uid>             [Retur all paths associated with the specified user]
+                     2. -name <File/Directory name>    [Return path of the specified File or Directory]
+                     3. -type <b/c/p/d/f/l/s>          [Return all paths associated with given file type]
+                     4. -ls                            [Display all entries of directory with more details]
+                     5. -size <in bytes>               [Display the paths of entries having size more than given size]
+                     6. -display                       [Display paths to each object of directory]
+                     
+==================================----------------------------------------========================================
