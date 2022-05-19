@@ -136,21 +136,39 @@ int main(int argc, char *argv[]){
             }
         }
 	    else if(strcmp(argv[i], "-size") == 0){
-            if (argv[++i]) {
-                op->size = (argv[i]);
-
-                if (op->size != NULL) {
-                    Option_flag = 1;
-                    Memory_flag = 1;
-                    continue;
-                }
-                else {
-                    fprintf(stderr, "find: Unknown argument\n");
+            if(argv[++i]){
+                if(strlen(argv[i]) > 1){
+                    fprintf(stderr,"find : Argument to -size can only be single letter\n");
                     exit(EXIT_FAILURE);
                 }
-            } 
-            else {
-                fprintf(stderr, "find: missing argument\n");
+
+                char x = *(argv[i]);
+                if(x == 'l' || x== 'e' || x == 'g'){
+                    op->size_flag = x;
+                    if(argv[++i]){
+                        if(argv[i] != NULL){
+                            op->size = argv[i];
+                            Option_flag = 1;
+                            Memory_flag = 1;
+                            continue;
+                        }
+                        else{
+                            fprintf(stderr, "find : Unknown Argument\n");
+                            exit(EXIT_FAILURE);
+                        }
+                    }
+                    else{
+                        fprintf(stderr, "find : Unknown Argument\n");
+                        exit(EXIT_FAILURE);
+                    }
+                }
+                else{
+                    fprintf(stderr, "find : Unknown Argument\n");
+                    exit(EXIT_FAILURE);
+                }
+            }
+            else{
+                fprintf(stderr, "find : Missing Arguments\n");
                 exit(EXIT_FAILURE);
             }
         }

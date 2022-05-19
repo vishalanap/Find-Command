@@ -4,6 +4,7 @@ typedef struct node{
     int Help;
     int Display;
     char File_Type;
+    char size_flag;
     char *Name;
     char* user;
     char *size;

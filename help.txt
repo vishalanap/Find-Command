@@ -14,7 +14,7 @@ Points to remember :
                      2. -name <File/Directory name>    [Return path of the specified File or Directory]
                      3. -type <b/c/p/d/f/l/s>          [Return all paths associated with given file type]
                      4. -ls                            [Display all entries of directory with more details]
-                     5. -size <in bytes>               [Display the paths of entries having size more than given size]
+                     5. -size <l/e/g> <in bytes>               [Display the paths of entries having size more than given size]
                      6. -display                       [Display paths to each object of directory]
                      
 ==================================----------------------------------------========================================

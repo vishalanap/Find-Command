@@ -166,14 +166,28 @@ void Test_File(char *path, Foptions *p, struct stat *a){
             if(FileType(a->st_mode) != p->File_Type)
                 return;
         }
-        if (p->size) {
+        if (p->size && p->size_flag == 'l') {
             int b = atoi(p->size);
-            if (a->st_size < b)
+            if (a->st_size >= b)
+                return;
+        }
+        if (p->size && p->size_flag == 'e') {
+            int b = atoi(p->size);
+            if (a->st_size > b || a->st_size < b)
+                return;
+        }
+        if (p->size && p->size_flag == 'g') {
+            int b = atoi(p->size);
+            if (a->st_size <= b)
                 return;
         }
         if(p->Name){
             char* file = basename(path);//basename() returns the last string of path
             if(fnmatch(p->Name, file, 0) != 0)
+                return;
+        }
+        if(p->user){
+            if(p->user_id != a->st_uid)
                 return;
         }
         if(p->Display){
