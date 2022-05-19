@@ -1,4 +1,4 @@
-#### Find Command Implementation in C
+### Find Command Implementation in C
 * The find command is used to locate files on Linux or Unix system. Find will search any set of directories you specify for files that match the supplied search criteria.
 * Find command can traverse and search through different file systems of partitions of directory.
 * Find command has various functionalities like search by name, file type, user, size etc.
@@ -7,7 +7,7 @@
 
 <hr>
 
-#### Functionalities implemented
+### Functionalities implemented
 1. <b>find <directory> –name <file/directory name> </b>:
 Return paths to all files or directories in given directory whose name matches with the given filename.
 2. <b> find <directory> -user <name/user id></b>:
